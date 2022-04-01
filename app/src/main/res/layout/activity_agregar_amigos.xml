@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarAmigos">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvrPhoto"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="150dp">
+    <ImageButton
+        android:id="@+id/imgFotoAmigo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_below="@id/cvrPhoto"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"/>
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_below="@id/txtNombre"
+        android:layout_margin="10dp"
+        android:hint="Telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_below="@id/txtTelefono"
+        android:layout_margin="10dp"
+        android:hint="Direccion fisica donde vives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_below="@id/txtDireccion"
+        android:layout_margin="10dp"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnGuardarAmigo"
+        android:layout_below="@id/txtEmail"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar amigo"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/abc_vector_test" />
+</RelativeLayout>
